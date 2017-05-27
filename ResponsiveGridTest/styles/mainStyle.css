@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+#intro {
+    background-color: blue;
+}
+
+.square {
+    display: flex;
+}
+
+#leftUp {
+    float: left;
+    background-color: red;
+    }
+
+#rightUp {
+    background-color: green;
+}
+
+#leftDown {
+    float: left;
+    background-color: yellow;
+    }
+
+#rightDown {
+    background-color: deeppink;
+}

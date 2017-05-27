@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Monoton', cursive;
+    display: block;
+}
+
+.content {
+    text-align: center;
+
+}
+
+#title {
+    font-size: 6.0em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#city {
+    font-size: 3.0em;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#temp {
+    font-size: 4.0em;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#sky {
+    font-size: 4.0em;
+    padding-top: 0px;
+    padding-bottom: 30px;
+
+}
+
+#footer {
+    
+}

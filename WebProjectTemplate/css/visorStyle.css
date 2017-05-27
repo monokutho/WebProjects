@@ -1,0 +1,9 @@
+body {
+    background-color: #000000;
+}
+
+#albumCover {
+    display: block;
+    background-color: aliceblue;
+    
+}

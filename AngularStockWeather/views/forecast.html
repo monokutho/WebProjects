@@ -1,0 +1,32 @@
+<p>
+    <a href="#/">Back to Search</a>
+</p>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h1>FORECAST for {{ city }}</h1>
+    </div>
+</div>
+<hr/>
+<!--Clever and quick way to select using the advantage of the manipulation of hash and $routeParams-->
+<!--ng-class allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added-->
+Days: <a href="#/forecast/1" ng-class="{'bg-primary': days === '1'}">Today</a> | <a href="#/forecast/3" ng-class="{'bg-primary': days === '3'}">3</a> |<a href="#/forecast/5" ng-class="{'bg-primary': days === '5'}">5</a> | <a href="#/forecast/7" ng-class="{'bg-primary': days === '7'}">7</a>
+<hr/>
+
+<!--You can access the weatherResult Oject via ng-repeat, the object is already in the $scope of the ForecastController-->
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <!-- You don't need to ineject the controler with $filter, you can use it directly in the html in the regular expression, you need to use a pipe and follow the syntax in the documentation-->
+                    <h3 class="panel-title">{{ convertToDate(w.dt) | date: 'MMM d, y' }}</h3>
+                </div>
+                <!--If you want to use a function inside your $scope in the view you have to use it inside the angular expression {{}} -->
+                <div class="panel-body">
+                    Daytime Temperature: {{ convertToCelsius(w.temp.day) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

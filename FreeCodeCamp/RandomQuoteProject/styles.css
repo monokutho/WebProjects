@@ -1,0 +1,32 @@
+body {
+    background-color: #713537;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+}
+
+.content {
+    margin: 10px;
+    color:#713537;
+}
+
+#quote_body {
+    background-color: #ffffff;
+    position: absolute;
+}
+
+#quote-title {
+    text-align: right;
+    font-style: italic;
+}
+
+.buttons {
+    display: inline;
+    background-color: #713537;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+}
+
+#get-another-quote-button {
+    float: right;
+}
