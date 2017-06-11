@@ -1,0 +1,30 @@
+body {
+    background-color: #000000;
+}
+
+#calBody {
+    position: absolute;
+    background-color: aliceblue;
+   }
+
+#calDisplay {
+    background-color: gray;
+}
+
+.boxes {
+    position: relative;
+    border-radius: 25px;
+}
+
+button {
+    background-color: #4CAF50;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
