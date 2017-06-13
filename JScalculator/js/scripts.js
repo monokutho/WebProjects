@@ -38,6 +38,9 @@ function allClear() {}
 function clearEntry() {}
 
 function init() {
-    centerElement(calBody, h, w, resizeBox(calBody, h, w, 1.6, 3.5))
-    resizeBox(calDisplay, h, w, 6, 4);
+    //centerElement(calBody, h, w, resizeBox(calBody, h, w, 1.6, 3.5))
+    //resizeBox(calDisplay, h, w, 6, 4);
+    console.log("ready to rumble")
+    console.log((h * 60)/100);
+    console.log((w * 40)/100);
 }
